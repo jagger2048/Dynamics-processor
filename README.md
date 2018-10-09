@@ -3,7 +3,7 @@ This is a noise gate effect demo. It contains the basic noise gate algorithm whi
 *Digital Dynamic Range Compressor Design——A Tutorial and Analysis*. By the way, audio file read/write methods are also involved.
 
 ## Usage
-**NoiseGate User manual**  [中文版](/NoiseGate User manual.md)
+**NoiseGate User manual**  [中文版](https://github.com/jagger2048/NoiseGate/blob/master/NoiseGate%20User%20manual.md)
 
 ## To Do lists
 - Advanced Noise Gate with Hysteresis function,based on the Dafx.
