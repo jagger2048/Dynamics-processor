@@ -12,19 +12,19 @@ V 1.0	原理及接口说明
 
 ​	Noise Gate的结构与limiter类似，通常情况下有以下基础参数：
 
-**Threshold：**阈值，信号超过阈值时Noise Gate将会打开，此时信号不会受到抑制，当低于阈值时，将会视为noise进行压制，需根据实际情况进行设定。
+**Threshold：** 阈值，信号超过阈值时Noise Gate将会打开，此时信号不会受到抑制，当低于阈值时，将会视为noise进行压制，需根据实际情况进行设定。
 
-**Release time：**释放时间，当输入信号低于阈值后到被完全抑制的时间，即noise从完全打开到完全关闭的时间长度。当release timec很小时会导致输出信号截断，并且在gate重新打开时会听到“click”的现象，较长的release time相当于“fade out”的效果。release time的重要程度仅次于Threshold。
+**Release time：** 释放时间，当输入信号低于阈值后到被完全抑制的时间，即noise从完全打开到完全关闭的时间长度。当release timec很小时会导致输出信号截断，并且在gate重新打开时会听到“click”的现象，较长的release time相当于“fade out”的效果。release time的重要程度仅次于Threshold。
 
-**Attack time：**响应时间，当输入信号超过阈值时，noise gate从完全关闭到完全打开所需要的时间，相当于“fade in”
+**Attack time：** 响应时间，当输入信号超过阈值时，noise gate从完全关闭到完全打开所需要的时间，相当于“fade in”
 
-**Hold time：**保持时间，在信号低于阈值时，仍然保持原有增益直到开始release的时间，为了防止noise gate在短时间内打开/关闭次数过多。
+**Hold time：** 保持时间，在信号低于阈值时，仍然保持原有增益直到开始release的时间，为了防止noise gate在短时间内打开/关闭次数过多。
 
 ​	一些高阶Noise Gate会根据实际需求添加以下控制参数（非必要）：
 
-**Range：**范围，控制信号在低于Threshold时抑制信号的程度，基础的Noise Gate在信号低于阈值时会完全抑制导致静音，在某些情况下会产生很突兀的效果，使用此参数可以调节抑制的程度，避免完全静音。
+**Range：** 范围，控制信号在低于Threshold时抑制信号的程度，基础的Noise Gate在信号低于阈值时会完全抑制导致静音，在某些情况下会产生很突兀的效果，使用此参数可以调节抑制的程度，避免完全静音。
 
-**Hysteresis：**迟滞，将单个的**Threshold** 分成两个Threshold（lowThreshold，ultraThreshold），一个用于控制Gate open，另一个用于控制Gate close，避免Noise Gate频繁地打开/关闭。
+**Hysteresis：** 迟滞，将单个的 **Threshold** 分成两个Threshold（lowThreshold，ultraThreshold），一个用于控制Gate open，另一个用于控制Gate close，避免Noise Gate频繁地打开/关闭。
 
 ​	以下是一个基础Noise Gate的理想表现示意图：
 
