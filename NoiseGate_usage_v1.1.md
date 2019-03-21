@@ -18,7 +18,7 @@ https://en.wikipedia.org/wiki/Noise_gate
 
 ​	In our design, the noise gate can be descripted as the below structure:
 
-![1528947189690](../Dynamics%20processor/assets/1528947189690.png)
+![1528947189690](./assets/1528947189690.png)
 
 ​	
 
@@ -26,7 +26,7 @@ https://en.wikipedia.org/wiki/Noise_gate
 
 ​	Below is a typical  static characteristics of noise gate:
 
-​						![noise_gate_attack_hold_release](../Dynamics%20processor/assets/clip_image001.png) 
+​						![noise_gate_attack_hold_release](./assets/clip_image001.png) 
 
 ​	
 
@@ -40,23 +40,23 @@ https://en.wikipedia.org/wiki/Noise_gate
    $$
    
 
-   ![1528956359699](../Dynamics%20processor/assets/1528956359699.png)
+   ![1528956359699](./assets/1528956359699.png)
 
 2. **Gain smoothing**
 
    ​	Smooth the gain that will be applied to the output gain, it is controlled by the setting of attack time，release time and hold time parameter. You should find the correct setting adapted to your application.
 
-   ![1528956445543](../Dynamics%20processor/assets/1528956445543.png)
+   ![1528956445543](./assets/1528956445543.png)
 
-   ![1528956467249](../Dynamics%20processor/assets/1528956467249.png)
+   ![1528956467249](./assets/1528956467249.png)
 
-   ![1528956479151](../Dynamics%20processor/assets/1528956479151.png)
+   ![1528956479151](./assets/1528956479151.png)
 
 3. **Applying gain**
 
    ​	Applying the gain to the input signal and output the processed signal.
 
-   ![1528956508029](../Dynamics%20processor/assets/1528956508029.png)
+   ![1528956508029](./assets/1528956508029.png)
 
 **Some improvement:**
 
@@ -117,19 +117,19 @@ void noiseGateUintTest() {
 
 
 
-![1529035648167](../Dynamics%20processor/assets/1529035648167.png)
+![1529035648167](./assets/1529035648167.png)
 
 
 
 Processed by the noise gate:
 
-![1529035694573](../Dynamics%20processor/assets/1529035694573.png)
+![1529035694573](./assets/1529035694573.png)
 
 
 
 The change of gain when processing:
 
-![1529035744065](../Dynamics%20processor/assets/1529035744065.png)
+![1529035744065](./assets/1529035744065.png)
 
 ​	
 
