@@ -7,7 +7,7 @@ void noiseGateUintTest() {
 	float* out = (float*)malloc(sizeof(float)*len);
 
 	// step 2: initialize the noise gate with default coefficients.
-	//			you can custom the parameters int the noise_gate_buff.
+	//			you can custom the parameters by the createNoisGate function.
 	//			For more details,please find the readme file.
 	NoiseGate_t* NG = createNoiseGate(0.01, 0.2, -24, samplerate);
 
