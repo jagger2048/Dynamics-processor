@@ -1,0 +1,2 @@
+aux_source_directory(. NONLINEAR_PROCESSOR_LIB_SRC)
+add_library(nonlinearProcessorLib ${NONLINEAR_PROCESSOR_LIB_SRC})

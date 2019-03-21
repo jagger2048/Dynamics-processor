@@ -15,19 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="NoiseGate.h">
+    <ClCompile Include="DynamicsProcessorUintTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dr_wav.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="dr_wav.h">
+    <ClInclude Include="NoiseGate.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="wavfile.h">
       <Filter>头文件</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="testNoiseGate.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
+    <ClInclude Include="DynamicsProcessorUintTest.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,10 +1,4 @@
-﻿#include <stdint.h>
-#include <stdlib.h>
-#include "NoiseGate.h"
-#include "wavfile.h"
-#include "dr_wav.h"
-#define DR_WAV_IMPLEMENTATION
-//using namespace std;
+﻿#include "DynamicsProcessorUintTest.h"
 void noiseGateUintTest() {
 	// step 1: read the audio data
 	WAV* wavfile = wavfile_read("audio_in_with_noise.wav");
